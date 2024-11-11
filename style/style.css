@@ -104,9 +104,9 @@
         display: none;
     }
     .logo{
-        align-items: center;
-        left: 50%; transform:
-        translateX(-50%);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .mobile-menu{
         display: none;
@@ -129,9 +129,9 @@
         display: none;
     }
     .logo{
-        align-items: center;
-        left: 50%; transform:
-        translateX(-50%);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .mobile-menu{
