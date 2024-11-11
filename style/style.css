@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.icons {
+    justify-content: space-between;
+    display: flex;
+    gap: 1vw
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.header-banner {
+    background-image:url('../img/dark_line.png'), url('../img/back.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30%;
+    background-position: center;
+    
+}
+.header-banner h1 {
+    font-family: "Cormorant", serif;
+    font-size: 60px; /* Увеличивает размер заголовка */
+    font-weight: 400;
+    color: white; /* Цвет текста */
+    margin: auto;
+    width: 80%;
+}
+
+.header-banner p {
+    font-family: "Cormorant", serif;
+    font-size: 24px; /* Увеличивает размер текста */
+    font-weight: 400;
+    color: white;
+    margin: auto;
+    width: 80%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 64px;
+}
+
+.nav-links-menu{
+    display: flex;
+    justify-content:space-between;
+    width: 500px;
+}
+
+.link-btn{
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-weight: 400;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.mobile-menu{
+    height: 691px;
+    width: 360px;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+    top: 0;
+}
+
+.mobile-menu_up{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 64px;
+
+}
+
+.mobile-menu_bottom{
+    
+}
+
+@media (max-width: 768px){
+    .burger-menu{
+        display: flex;
+        position: absolute;
+        left: 1rem;
+    }
+    
+    .link-btn{
+        display: none;
+    }
+    .logo{
+        align-items: center;
+        left: 50%; transform:
+        translateX(-50%);
+    }
+}
+
+@media (max-width: 480px){
+    .burger-menu{
+        display: flex;
+        position: absolute;
+        left: 1rem;
+    }
+    
+    .link-btn{
+        display: none;
+    }
+    .logo{
+        align-items: center;
+        left: 50%; transform:
+        translateX(-50%);
+    }
+}
