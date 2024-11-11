@@ -71,6 +71,7 @@
 }
 
 .mobile-menu{
+    display: none;
     height: 691px;
     width: 360px;
     background-color: white;
@@ -107,8 +108,16 @@
         left: 50%; transform:
         translateX(-50%);
     }
+    .mobile-menu{
+        display: none;
+        height: 691px;
+        width: 360px;
+        background-color: white;
+        position: fixed;
+        align-items: center;
+        top: 0;
 }
-
+}
 @media (max-width: 480px){
     .burger-menu{
         display: flex;
@@ -124,4 +133,14 @@
         left: 50%; transform:
         translateX(-50%);
     }
+
+    .mobile-menu{
+        display: none;
+        height: 691px;
+        width: 360px;
+        background-color: white;
+        position: fixed;
+        align-items: center;
+        top: 0;
+}
 }
