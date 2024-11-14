@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+.logo{
+    margin-top:auto 
+}
 .icons {
     justify-content: space-between;
     display: flex;
@@ -16,7 +19,7 @@
 .search{
     display: flex;
     align-items: center;
-    margin-left: 80px;
+    
 }
 
 .header-banner {
@@ -25,7 +28,7 @@
     background-size: cover;
     padding-top: 30%;
     background-position: center;
-    margin-top: 5%;
+    margin-top: 30px;
 }
 .header-banner h1 {
     font-family: "Cormorant", serif;
@@ -90,6 +93,7 @@
 }
 
 .collection{
+    margin-top: 30px;
     font-family: "Cormorant", serif;
     display: flex; 
     flex-direction: column; /* Добавляем вертикальное выравнивание */
