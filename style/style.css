@@ -40,6 +40,7 @@
 }
 
 .header-banner p {
+    margin-top: 1650px;
     font-family: "Cormorant", serif;
     font-size: 24px; /* Увеличивает размер текста */
     font-weight: 400;
@@ -58,6 +59,7 @@
 }
 
 .nav-links-menu{
+    font-family: "Open Sans", sans-serif;
     display: flex;
     justify-content:space-between;
     width: 500px;
@@ -149,6 +151,10 @@
 }
 
 @media (max-width: 768px){
+
+    .header-banner{
+        margin-top: 165px;
+    }
     .burger-menu{
         display: flex;
         position: absolute;
@@ -174,6 +180,9 @@
 }
 }
 @media (max-width: 480px){
+    .header-banner{
+        margin-top: 76px;
+    }
     .burger-menu{
         display: flex;
         position: absolute;
