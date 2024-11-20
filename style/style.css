@@ -9,22 +9,24 @@
         
         
               /* Header styles */
-              .header {
-                  padding: 1rem 2rem;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  background: white;
-                  position: relative;
-              }
+            .header {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: white;
+                position: relative;
+            }
         
-              .logo{
-                margin-top:auto 
+            .logo{
+                margin-top:auto;
+                
+                
             }
             .icons {
                 justify-content: space-between;
                 display: flex;
-                gap: 1vw
+                gap: 1rem
             }
             
             .search{
@@ -34,37 +36,37 @@
             }
             
         
-              .burger-menu {
-                  display: none;
-                  flex-direction: column;
-                  gap: 4px;
-                  cursor: pointer;
-                  z-index: 2;
-                  padding: 10px;
-              }
+            .burger-menu {
+                display: none;
+                flex-direction: column;
+                gap: 4px;
+                cursor: pointer;
+                z-index: 2;
+                padding: 10px;
+            }
         
-              .burger-line {
-                  width: 24px;
-                  height: 2px;
-                  background-color: #333;
-                  transition: all 0.3s ease;
-              }
+            .burger-line {
+                width: 24px;
+                height: 2px;
+                background-color: #333;
+                transition: all 0.3s ease;
+            }
         
-              .nav-menu {
-                  display: flex;
-                  gap: 2rem;
-              }
+            .nav-menu {
+                display: flex;
+                gap: 2rem;
+            }
         
-              .nav-menu a {
-                  text-decoration: none;
-                  color: #333;
-              }
+            .nav-menu a {
+                text-decoration: none;
+                color: #333;
+            }
         
-              .cart {
-                  z-index: 2;
-              }
+            .cart {
+                z-index: 2;
+            }
         
-              .header-banner {
+            .header-banner {
                 background-image:url('../img/dark_line.png'), url('../img/back.png'); 
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -84,91 +86,88 @@
             .header-banner p {
                 margin-top: 1650px;
                 font-family: "Cormorant", serif;
-                font-size: 40px; /* Увеличивает размер текста */
+                font-size: 24px; /* Увеличивает размер текста */
                 font-weight: 400;
                 color: white;
                 margin: auto;
                 width: 80%;
             }
             .collection h2{
-              font-family: "Cormorant", serif;
-              display: flex; 
-              flex-direction: column; /* Добавляем вертикальное выравнивание */
-              justify-content: center;
-              align-items: center; 
-              text-align: center;
-              font-weight: 300;
-              size: 40px;
-              font-style: italic;
-              margin-top: 150px; /* Отступ сверху */ 
-              margin-bottom: 150px; /* Отступ снизу */
-          }
-          
-          .collection h3{
-              font-family: "Cormorant", serif;
-              display: flex; 
-              flex-direction: column; /* Добавляем вертикальное выравнивание */
-              justify-content: center;
-              align-items: center; 
-              text-align: center;
-              font-weight: 400;
-              size: 40px;
-          }
+            font-family: "Cormorant", serif;
+            flex-direction: column; /* Добавляем вертикальное выравнивание */
+            justify-content: center;
+            align-items: center; 
+            text-align: center;
+            font-weight: 300;
+            size: 40px;
+            font-style: italic;
+            margin-top: 150px; /* Отступ сверху */ 
+            margin-bottom: 150px; /* Отступ снизу */
+        }
+
+            .collection h3{
+            font-family: "Cormorant", serif;
+            display: flex; 
+            flex-direction: column; /* Добавляем вертикальное выравнивание */
+            align-items: center; 
+            font-weight: 400;
+            size: 60px;
+        }
         
         
-              .collection-grid {
-                  display: grid;
-                  grid-template-columns: repeat(5, 1fr);
-                  gap: 2rem;
-                  margin-top: 2rem;
-              }
+            .collection-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 2rem;
+                margin-top: 2rem;
+            }
         
-              .tea-item {
-                  text-align: center;
-              }
+            .tea-item {
+                text-align: center;
+            }
         
-              .tea-item img {
-                  width: 120px;
-                  height: 120px;
-                  border-radius: 50%;
-                  margin-bottom: 1rem;
-              }
+            .tea-item img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
         
-              /* Общие стили */
+            /* Общие стили */
         .testimonials {
           background-color: #f9f5f0; /* Мягкий фон */
-          padding: 50px 20px;
-          text-align: center;
+        padding: 50px 20px;
+        text-align: center;
         }
         
         .testimonials-header {
-          margin-bottom: 30px;
+        margin-bottom: 30px;
         }
         
         .testimonials-title {
-          font-family: "Cormorant", serif;
-          size: 40px;
-          font-size: 2rem;
-          font-weight: bold;
-          color: #333;
-          margin: 0;
+        font-family: "Cormorant", serif;
+        size: 40px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
         }
         
         /* Сетка отзывов */
         .testimonials-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr); /* Четыре колонки */
-          gap: 20px;
-          max-width: 1200px;
-          margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Четыре колонки */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
         }
         
         .testimonial {
-          background: #fff;
-          padding: 20px;
-          border-radius: 10px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          text-align: left;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
         }
         
         .testimonial-text {
@@ -535,55 +534,52 @@
           width: auto;
         }
         
-              /* адаптация стилей */
-              @media (max-width: 768px) {
+/* Адаптация стилей */
+@media (max-width: 768px) {
+
+    .header{
+        margin: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .icons {
+        display: flex;
+        gap: 1rem;
+        margin-left: auto; 
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        left: 1rem;
+    }
         
-                .header{
-                  padding: 2rem;
-                  display: flex;
-                }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 80px 2rem 2rem;
+        gap: 1rem;
+        transition: left 0.3s ease;
+        z-index: 1;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
         
-                .header-banner{
-                  margin-top: 165px;
-              }
-        
-        
-              .logo{
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        
-              .icons {
-                justify-content: space-between;
-                display: flex;
-                gap: 1vw
-            }
-        
-        
-        
-                  .burger-menu {
-                      display: flex;
-                      position: absolute;
-                      left: 1rem;
-                  }
-        
-                  .nav-menu {
-                      position: fixed;
-                      top: 0;
-                      left: -100%;
-                      width: 250px;
-                      height: 100vh;
-                      background: white;
-                      flex-direction: column;
-                      padding: 80px 2rem 2rem;
-                      gap: 1rem;
-                      transition: left 0.3s ease;
-                      z-index: 1;
-                      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-                  }
-        
-                  .nav-menu.active {
+        .nav-menu.active {
                       left: 0;
                   }
         
@@ -628,42 +624,41 @@
                   .burger-menu.active .burger-line:nth-child(3) {
                       transform: rotate(-45deg) translate(5px, -5px);
                   }
-              }
+}
+
+
+    @media (max-width: 480px) {
+
+    .collection-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 30px;
+        }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+        }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
         
-              @media (max-width: 480px) {
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .blog-item {
+        flex-direction: column;
+    }
         
-                
-                .collection-grid {
-                  display: grid;
-                  grid-template-columns: repeat(2, 1fr);
-                  gap: 30px;
-                  margin-bottom: 30px;
-                }
-              
-              
-                  .hero-content h1 {
-                      font-size: 1.8rem;
-                  }
-        
-                  .footer {
-                      grid-template-columns: 1fr;
-                  }
-        
-                  .newsletter input {
-                      width: 100%;
-                      margin-bottom: 1rem;
-                  }
-        
-                  .blog-item {
-                      flex-direction: column;
-                  }
-        
-                  .blog-item img {
-                      width: 100%;
-                      height: 200px;
-                  }
-              }
-        
+    .blog-item img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
               /* Overlay for when mobile menu is active */
               .overlay {
                   display: none;
