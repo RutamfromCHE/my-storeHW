@@ -395,118 +395,127 @@
           line-height: 1.3;
         }
         
-        /* Footer main section */
-        .footer {
-          background-color: #FAF7F2;
-          padding: 60px 20px 30px;
-        }
-        
-        .footer-content {
-          max-width: 460px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 40px;
-        }
-        
-        /* Footer columns */
-        .footer-column {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-        }
-        
-        .footer-heading {
-          font-size: 16px;
-          color: #333;
-          margin: 0 0 10px;
-        }
-        
-        .footer-links {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
-        
-        .footer-link {
-          color: #666;
-          text-decoration: none;
-          font-size: 14px;
-          transition: color 0.3s ease;
-        }
-        
-        .footer-link:hover {
-          color: #333;
-        }
-        
-        /* Quote section */
-        .footer-quote {
-          font-style: italic;
-          color: #666;
-          font-size: 14px;
-          line-height: 1.5;
-          margin-bottom: 15px;
-        }
-        
-        .quote-author {
-          color: #333;
-          font-size: 12px;
-        }
-        
-        /* Contact information */
-        .contact-info {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
-        
-        .contact-item {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          color: #666;
-          font-size: 14px;
-        }
-        
-        /* Social media */
-        .social-links {
-          display: flex;
-          gap: 15px;
-          margin-top: 20px;
-        }
-        
-        .social-icon {
-          width: 20px;
-          height: 20px;
-          color: #666;
-        }
-        
-        /* Footer bottom */
-        .footer-bottom {
-          margin-top: 40px;
-          padding-top: 20px;
-          border-top: 1px solid #E5E5E5;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        
-        .copyright {
-          font-size: 12px;
-          color: #666;
-        }
-        
-        .payment-methods {
-          display: flex;
-          gap: 10px;
-          align-items: center;
-        }
-        
-        .payment-icon {
-          height: 20px;
-          width: auto;
-        }
-        
+/* Стили для футера */
+.footer {
+  background-color: #f4f2eb;
+  color: #333;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Колонки */
+.footer-column {
+  flex: 1;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #555;
+}
+
+/* Секция Stay in Touch */
+.footer-quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Соцсети */
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+/* Нижний футер */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #555;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-icon {
+  width: 40px;
+  height: auto;
+}
 /* Адаптация стилей */
 @media (max-width: 768px) {
 
