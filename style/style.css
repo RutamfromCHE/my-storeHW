@@ -63,30 +63,36 @@
             }
         
             .header-banner {
-                background-image:url('../img/dark_line.png'), url('../img/back.png'); 
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding-top: 30%;
-                background-position: center;
-                margin-top: 30px;
+              background-image: url('../img/dark_line.png'), url('../img/back.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding-top: 200px;
+              background-position: center;
+              margin-top: 30px;
+              height: 500px;
             }
-            .header-banner h1 {
-                font-family: "Cormorant", serif;
-                font-size: 60px; /* Увеличивает размер заголовка */
-                font-weight: 400;
-                color: white; /* Цвет текста */
-                margin: auto;
-                width: 80%;
-            }
-            
-            .header-banner p {
-                font-family: "Cormorant", serif;
-                font-size: 24px; /* Увеличивает размер текста */
-                font-weight: 400;
-                color: white;
-                margin: auto;
-                width: 80%;
-            }
+          
+          .header-banner h1 {
+              font-family: "Cormorant", serif;
+              font-size: 60px;
+              font-weight: 400;
+              color: white;
+              margin-top: 254px; 
+              text-align: left;
+              width: 789.91px;
+              height: 120px;
+              margin-left: 199.88px;
+          }
+          
+          .header-banner p {
+              font-family: "Cormorant", serif;
+              font-size: 24px;
+              font-weight: 400;
+              color: white;
+              width: 557.65px;
+              margin-top: 20px;
+              margin-left: 199.88px;
+          }
             .collection h2{
             font-family: "Cormorant", serif;
             flex-direction: column; /* Добавляем вертикальное выравнивание */
