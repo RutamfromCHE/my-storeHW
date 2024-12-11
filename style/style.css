@@ -10,7 +10,6 @@
         
               /* Header styles */
             .header {
-
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -203,11 +202,14 @@
         
         /* Заголовок */
         .blog-header {
+          
           margin-bottom: 30px;
         }
         
         .blog-title {
-          font-size: 2rem;
+          font-family: "Cormorant", serif;
+          font-size: 40px;
+          font-weight: 400px;
           font-weight: bold;
           margin: 0;
         }
@@ -246,20 +248,26 @@
         }
         
         .post-title {
-          font-size: 1.2rem;
+          font-family: "Cormorant", serif;
+          font-size: 24px;
+          font-weight: 400;
           margin: 10px 0;
-          color: #000;
+          color: #151618;
         }
         
         .post-author {
-          font-size: 0.9rem;
-          color: #777;
+          font-family: "Open Sans", sans-serif;
+          font-size: 13px;
+          font-weight: 300;
+          color: #151618;
           margin-bottom: 15px;
         }
         
         .post-link {
-          text-decoration: none;
-          color: #007acc;
+          font-family: "Open Sans", sans-serif;
+          font-size: 13px;
+          font-weight: 300;
+          color: #151618;
           font-weight: bold;
           transition: color 0.3s ease;
         }
@@ -334,12 +342,10 @@
         }
         
         .email-input {
-            width: 100%;
-            padding: 10px 15px;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 15px;
+            max-width:  439px;
+            border: none;
+
+
         }
         
         .join-button {
@@ -532,6 +538,22 @@
         padding: 1rem;
     }
     
+    .header-banner h1{
+      display: flex;
+      width: 684px;
+      height: 120px;
+      margin-left: 20px;
+      margin-top: 254px;
+    }
+
+    .header-banner p{
+      display: flex;
+      font-size: 24px;
+      width: 557.65px;
+      height: 58px;
+      margin-left: 19.88px;
+
+    }
     .icons {
         padding-right: 0;
         display: flex;
@@ -616,10 +638,94 @@
     .burger-menu.active .burger-line:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Два столбца */
+      gap: 20px; /* Расстояние между элементами */
+  }
+  
+  .testimonial {
+      padding: 10px;
+
+      background-color: #F7F2EA;
+  }
+  
+  .blog-post{
+    display: flex;
+    width: 640px;
+    align-items:center;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  .post-image{
+    width: 270px;
+    height: 180px;
+  }
+
+  .post-content{
+    width: 540px;
+  }
+.blog-grid article:nth-child(2) {
+  width: 540px;
+  margin-left: 162px; /* Задайте нужный отступ */
+}
+
+.blog-grid article:nth-child(4) {
+  width: 540px;
+  margin-left: 162px; /* Задайте нужный отступ */
+}
+
+.subscribe-content {
+  flex-direction: column;
+  text-align: center;
+  margin-left: 64px;
+}
+
+.subscribe-form{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 580px;
+  height: 117px;
+  margin-left: 64px;
+}
+.email-input {
+  width:  200px;
+  border: none;
+
+}
 }
 
 
+
+
     @media (max-width: 480px) {
+
+      
+  .header-banner{
+    background-position:left;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .header-banner h1{
+    font-size: 40px;
+    display: flex;
+    width: 450px;
+    height: 96px;
+    margin-left: 9px;
+    margin-top: 276px;
+  }
+
+  .header-banner p{
+    display: flex;
+    font-size: 24px;
+    width: 450px;
+    height: 58px;
+    margin-top: 20px;
+    
+  }
 
     .collection-grid {
         display: grid;
@@ -632,6 +738,55 @@
         font-size: 1.8rem;
         }
 
+
+
+.blog-grid{
+  
+  width: 460px;
+}
+.blog-post{
+  width: 460px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.blog-grid article:nth-child(2) {
+  width: 460px;
+  margin-left: 10px; /* Задайте нужный отступ */
+}
+
+.blog-grid article:nth-child(4) {
+  width: 460px;
+  margin-left: 10px; /* Задайте нужный отступ */
+}
+
+.subscribe-content {
+  font-size: 13px;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 40px;
+  height: 415px;
+}
+
+.subscribe-form{
+  margin-top: 10px;
+}
+
+.email-input {
+  width:  110px;
+  border: none;
+}
+
+.join-button{
+  transform: translateX(150px);
+}
+
+.privacy-policy{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
     .footer {
         grid-template-columns: 1fr;
     }
@@ -641,13 +796,5 @@
         margin-bottom: 1rem;
     }
 
-    .blog-item {
-        flex-direction: column;
-    }
-        
-    .blog-item img {
-        width: 100%;
-        height: 200px;
-    }
-}
 
+}
