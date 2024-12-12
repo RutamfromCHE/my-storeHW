@@ -29,7 +29,13 @@
                 padding-right: 200px;
             }
             
-            
+            .iconsformenu{
+              display: none;
+            }
+
+            .menu-links{
+              display: none;
+            }
         
             .burger-menu {
                 display: none;
@@ -194,7 +200,6 @@
         
               /* Стили для блока блога */
         .tea-blog {
-          max-width: 1200px;
           margin: 0 auto;
           padding: 50px 20px;
           text-align: center;
@@ -576,23 +581,53 @@
     }
         
     .nav-menu {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 250px;
-        height: 100vh;
-        background: white;
-        flex-direction: column;
-        padding: 80px 2rem 2rem;
-        gap: 1rem;
-        transition: left 0.3s ease;
-        z-index: 1;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    }
-        
-        .nav-menu.active {
-            left: 0;
-        }
+      display: flex;
+      gap: 0;
+      position: absolute;
+      top: 0;
+      left: -100%; /* Начальная позиция для скрытого меню */
+      width: 360px;
+      height: 691px;
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      transition: left 0.3s ease;
+      z-index: 1;
+      border: 1px #030000;
+  }
+  
+  .nav-menu.active {
+      left: 0; /* Позиция меню при активации */
+  }
+  
+  /* Стили для ссылок меню */
+  .nav-menu a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      transition: color 0.3s ease;
+  }
+
+  .iconsformenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+
+  }
+
+  .menu-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+  }
         
     .collection-grid {
         display: grid;
@@ -653,7 +688,7 @@
   
   .blog-post{
     display: flex;
-    width: 640px;
+    width: 600px;
     align-items:center;
     margin-left: 64px;
     margin-right: 64px;
@@ -695,7 +730,7 @@
   border: none;
 
 }
-}
+
 
 
 
@@ -727,6 +762,60 @@
     
   }
 
+  .burger-menu {
+    display: flex;
+    position: absolute;
+    left: 1rem;
+}
+    
+.nav-menu {
+  display: flex;
+  gap: 0;
+  position: absolute;
+  top: 0;
+  left: -110%; /* Начальная позиция для скрытого меню */
+  width: 360px;
+  height: 691px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: left 0.3s ease;
+  z-index: 1;
+  border: 1px #030000;
+}
+
+.nav-menu.active {
+  left: 0; /* Позиция меню при активации */
+}
+
+/* Стили для ссылок меню */
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  transition: color 0.3s ease;
+}
+
+.iconsformenu{
+display: flex;
+justify-content: flex-end;
+margin-top: 80px;
+
+}
+
+.menu-links{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+transition: left 0.3s ease;
+z-index: 1;
+}
+
     .collection-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -745,18 +834,18 @@
   width: 460px;
 }
 .blog-post{
-  width: 460px;
+  width: 420px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .blog-grid article:nth-child(2) {
-  width: 460px;
+  width: 420px;
   margin-left: 10px; /* Задайте нужный отступ */
 }
 
 .blog-grid article:nth-child(4) {
-  width: 460px;
+  width: 420px;
   margin-left: 10px; /* Задайте нужный отступ */
 }
 
